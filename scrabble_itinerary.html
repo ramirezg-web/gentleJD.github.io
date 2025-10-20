@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>🎲 TRIPLE WORD SCORE WEEKEND 🎲</title>
+    <style>
+      :root {
+        --wood: #8b5a2b;
+        --cream: #f7efe2;
+        --board: #d7a86e;
+        --tile: #fff6e8;
+        --dark: #2c5f2d;
+        --accent: #c42b2b;
+      }
+      body {
+        margin: 0;
+        font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial;
+        background: linear-gradient(180deg, #f0efe8 0%, #e6dccb 100%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 30px 20px;
+      }
+      .card {
+        width: min(800px, 96%);
+        background: var(--cream);
+        border-radius: 12px;
+        box-shadow: 0 12px 30px rgba(0, 0, 0, 0.18);
+        border: 6px solid var(--wood);
+        padding: 22px;
+      }
+      header {
+        display: flex;
+        gap: 18px;
+        align-items: center;
+      }
+      .title {
+        flex: 1;
+      }
+      h1 {
+        margin: 0;
+        font-size: 20px;
+        color: var(--dark);
+        letter-spacing: 1px;
+      }
+      .subtitle {
+        margin: 4px 0 0 0;
+        font-size: 13px;
+        color: #444;
+      }
+      .dates {
+        font-weight: 700;
+        color: #6c4b2a;
+        font-size: 13px;
+      }
+      .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 14px;
+        margin-top: 18px;
+      }
+      .day {
+        background: #fff;
+        border-radius: 8px;
+        padding: 12px;
+        border-left: 8px solid var(--board);
+      }
+      .day h3 {
+        margin: 0 0 8px 0;
+        font-size: 14px;
+        color: var(--dark);
+      }
+      .small {
+        font-size: 13px;
+        color: #444;
+        margin: 6px 0;
+      }
+      .event {
+        background: linear-gradient(180deg, #fffefc, #f6f0e6);
+        padding: 8px;
+        border-radius: 6px;
+        margin-bottom: 8px;
+        font-size: 13px;
+      }
+      .time {
+        font-weight: 700;
+        color: var(--dark);
+      }
+      .tiles {
+        display: flex;
+        gap: 8px;
+        margin-top: 14px;
+        justify-content: center;
+      }
+      .tile {
+        width: 44px;
+        height: 44px;
+        background: var(--tile);
+        border: 3px solid var(--wood);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 700;
+        color: var(--dark);
+        border-radius: 4px;
+        font-size: 18px;
+        position: relative;
+      }
+      .tile span {
+        position: absolute;
+        right: 6px;
+        bottom: 6px;
+        font-size: 11px;
+        color: #6b4d35;
+      }
+      .legend {
+        margin-top: 14px;
+        background: #fff9f2;
+        padding: 10px;
+        border-radius: 8px;
+        font-size: 13px;
+      }
+      .cta {
+        margin-top: 14px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .score {
+        font-weight: 800;
+        color: var(--accent);
+      }
+      footer {
+        margin-top: 12px;
+        font-size: 12px;
+        color: #4b4b4b;
+        text-align: center;
+      }
+      @media (max-width: 640px) {
+        .grid {
+          grid-template-columns: 1fr;
+        }
+        .tile {
+          width: 38px;
+          height: 38px;
+          font-size: 16px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <header>
+        <div class="title">
+          <h1>🎲 TRIPLE WORD SCORE 🎲</h1>
+          <div class="subtitle">
+            A Scrabble-themed DC adventure — November 4–6, 2025
+          </div>
+        </div>
+        <div class="dates">November 4–6, 2025</div>
+      </header>
+
+      <div class="grid">
+        <div class="day">
+          <h3>Day 1 — Tuesday, Nov 4 • OPENING PLAY</h3>
+          <div class="event">
+            <div class="time">Morning</div>
+            <div class="small">
+              The Setup — 7 tiles to start. Breakfast challenge: spell a
+              breakfast word. (Croissant = 11 pts)
+            </div>
+          </div>
+          <div class="event">
+            <div class="time">Evening • 8:15 PM</div>
+            <div class="small">
+              Silver Lyan reservation — SILVER ≈ 9 pts. Cocktail challenge:
+              total drink name scores.
+            </div>
+          </div>
+        </div>
+
+        <div class="day">
+          <h3>Day 2 — Wednesday, Nov 5 • POWER PLAY</h3>
+          <div class="event">
+            <div class="time">Morning</div>
+            <div class="small">
+              Bingo round idea: spell your coffee order with tiles. Brown Sugar
+              Latte letter hunt.
+            </div>
+          </div>
+          <div class="event">
+            <div class="time">Evening • 7:45 PM & 9:00 PM</div>
+            <div class="small">
+              AU Law pickup + Dinner at Sushiera. License-plate word challenge
+              en route.
+            </div>
+          </div>
+          <div class="event">
+            <div class="time">Daily Target</div>
+            <div class="small">
+              150+ points, at least one 7-letter sighting.
+            </div>
+          </div>
+        </div>
+
+        <div class="day">
+          <h3>Day 3 — Thursday, Nov 6 • CLOSING GAMBIT</h3>
+
+          <div class="event">
+            <div class="time">Mid-morning</div>
+            <div class="small">
+              Uber to hair appointment. Optional Uber back offered — calculate
+              the points difference (UBER = 6, TAXI = 11).
+            </div>
+          </div>
+        </div>
+
+        <div style="grid-column: span 2" class="legend">
+          <strong>Weekend Scoring Summary</strong>
+          <div
+            style="
+              display: flex;
+              justify-content: space-between;
+              margin-top: 8px;
+            "
+          >
+            <div>Silver Lyan experience</div>
+            <div class="score">100 pts</div>
+          </div>
+          <div style="display: flex; justify-content: space-between">
+            <div>Sushiera dinner</div>
+            <div class="score">100 pts</div>
+          </div>
+          <div style="display: flex; justify-content: space-between">
+            <div>Hair appointment</div>
+            <div class="score">75 pts</div>
+          </div>
+          <div style="display: flex; justify-content: space-between">
+            <div>Gentle + Nia / Beautiful Minds in Meatspace</div>
+            <div class="score">175+ pts</div>
+          </div>
+          <div style="margin-top: 10px; font-size: 13px">
+            <strong>Scoring Legend:</strong> A=1 B=3 C=3 D=2 E=1 F=4 G=2 H=4 I=1
+            J=8 K=5 L=1 M=3 N=1 O=1 P=3 Q=10 R=1 S=1 T=1 U=1 V=4 W=4 X=8 Y=4
+            Z=10
+          </div>
+        </div>
+      </div>
+
+      <div class="tiles" aria-hidden="true">
+        <div class="tile">T <span>1</span></div>
+        <div class="tile">R <span>1</span></div>
+        <div class="tile">I <span>1</span></div>
+        <div class="tile">P <span>3</span></div>
+        <div class="tile">L <span>1</span></div>
+        <div class="tile">E <span>1</span></div>
+      </div>
+
+      <div class="cta">
+        <div style="font-weight: 700; color: var(--dark)">
+          Grand goal: 500+ pts
+        </div>
+      </div>
+
+      <footer>
+        May your weekend be full of triple word scores and zero challenged
+        words! 🏆
+      </footer>
+    </div>
+  </body>
+</html>
